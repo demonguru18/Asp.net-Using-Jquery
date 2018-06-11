@@ -11,7 +11,7 @@ namespace Asp.Net_JQuery_Recipes
 {
 
 
-    public partial class Default
+    public partial class Home
     {
     }
 }
