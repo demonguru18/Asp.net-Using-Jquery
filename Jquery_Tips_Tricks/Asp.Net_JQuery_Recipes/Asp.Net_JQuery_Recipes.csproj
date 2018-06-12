@@ -66,8 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WebForm1.aspx" />
     <None Include="packages.config" />
-    <Content Include="JqueryTipsTricks.Master" />
+    <Content Include="Get_Values_Of_All_Textboxes.aspx" />
+    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,9 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Disable_Cut_Copy_Paste_On_Textbox.aspx" />
-    <Content Include="Get_Values_Of_All_Textboxes.aspx" />
     <Content Include="Get_Value_Of_Specific_Textbox.aspx" />
-    <Content Include="Home.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,20 +104,20 @@
     <Compile Include="Get_Value_Of_Specific_Textbox.aspx.designer.cs">
       <DependentUpon>Get_Value_Of_Specific_Textbox.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="JqueryTipsTricks.Master.cs">
-      <DependentUpon>JqueryTipsTricks.Master</DependentUpon>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="JqueryTipsTricks.Master.designer.cs">
-      <DependentUpon>JqueryTipsTricks.Master</DependentUpon>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
@@ -131,7 +131,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53082</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

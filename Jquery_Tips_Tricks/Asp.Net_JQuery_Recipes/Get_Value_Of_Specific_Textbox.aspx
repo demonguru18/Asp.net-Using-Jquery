@@ -19,13 +19,34 @@
     <script type="text/javascript"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm badge-success bg-inverse justify-content-center text-uppercase">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="AllTextBoxValues.aspx">Get Specific Asp.net TextBox Values Using Jquery</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Menu navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="Home.aspx">TECHHOWDY</a>      
+
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                             <li class="nav-item active">
+                                <a class="nav-link" href="Home.aspx">Home</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Asp.Net & JQuery Tips and Tricks
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="Get_Values_Of_All_Textboxes.aspx">Get All Textbox Values</a>
+                                  <a class="dropdown-item" href="Get_Value_Of_Specific_Textbox.aspx">Get Specific TextBox Values</a>
+                                  <a class="dropdown-item" href="Disable_Cut_Copy_Paste_On_Textbox.aspx">Disable Cut Copy Paste</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-github"></i> Download Project File</a>
+                                </div>
+                              </li>                         
+                        </ul>
+                </div>
+                                   
+                </nav>
+               
     <div class="row m-0">
         <div class="col-md-6 text-center">
             <div class="card m-5">
