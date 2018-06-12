@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Access_FormControls.aspx" />
     <Content Include="Home.aspx" />
     <None Include="packages.config" />
     <Content Include="Get_Values_Of_All_Textboxes.aspx" />
@@ -83,6 +84,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Access_FormControls.aspx.cs">
+      <DependentUpon>Access_FormControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Access_FormControls.aspx.designer.cs">
+      <DependentUpon>Access_FormControls.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Disable_Cut_Copy_Paste_On_Textbox.aspx.cs">
       <DependentUpon>Disable_Cut_Copy_Paste_On_Textbox.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

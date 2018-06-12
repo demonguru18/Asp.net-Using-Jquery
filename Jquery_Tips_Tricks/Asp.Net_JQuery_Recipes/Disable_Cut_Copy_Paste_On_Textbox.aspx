@@ -19,9 +19,7 @@
                     <div class="form-group">
                         <asp:TextBox ID="ConfirmEmail" runat="server" Text="Confirm Email"  class="form-control"></asp:TextBox>
                         <p id="errorMessage" ></p>
-                    </div>
-                  
-                        
+                    </div>                      
             </form>
                 </div>
                 <div class="card-footer"><span><button class="btn btn-success" onclick="location.href='https://github.com/demonguru18/Asp.net-Using-Jquery-Tips'"><i class="fa fa-github" style="font-size:20px"></i> DOWNLOAD PROJECT FILE</button></span></div>
