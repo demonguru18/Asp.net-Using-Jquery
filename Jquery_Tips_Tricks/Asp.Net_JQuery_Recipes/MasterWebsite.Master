@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Asp.Net_JQuery_Recipes.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterWebsite.Master.cs" Inherits="Asp.Net_JQuery_Recipes.Site1" %>
 
 <!DOCTYPE html>
 
@@ -36,13 +36,17 @@
                                   Asp.Net & JQuery Tips and Tricks
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="Get_Values_Of_All_Textboxes.aspx">Get All Textbox Values</a>
-                                  <a class="dropdown-item" href="Get_Value_Of_Specific_Textbox.aspx">Get Specific TextBox Values</a>
-                                  <a class="dropdown-item" href="Disable_Cut_Copy_Paste_On_Textbox.aspx">Disable Cut Copy Paste</a>
+                                  <a class="dropdown-item" href="Get_Values_Of_All_Textboxes.aspx"><i class="fa fa-code"></i> Get All Textbox Values</a>
+                                  <a class="dropdown-item" href="Get_Value_Of_Specific_Textbox.aspx"><i class="fa fa-code"></i> Get Specific TextBox Values</a>
+                                  <a class="dropdown-item" href="Disable_Cut_Copy_Paste_On_Textbox.aspx"><i class="fa fa-code"></i> Disable Cut Copy Paste</a>
                                   <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#"><i class="fa fa-github"></i> Download Project File</a>
+                                  <a class="dropdown-item" href="#"></a>
                                 </div>
-                              </li>                         
+                              </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/demonguru18/Asp.net-Using-Jquery/archive/master.zip"><i class="fa fa-github"></i> Download Project File</a>
+
+                        </li>
                         </ul>
                 </div>
                                    
@@ -53,6 +57,8 @@
 
             </asp:ContentPlaceHolder>
         </div>
-  
+ <footer class="navbar badge-dark m-5 justify-content-center">
+        <h6 class="float-center">&copy; 2018 TECHHOWDY - All Rights Reserved | <a class="text-white" href="http://techhowdy.com/">www.techhowdy.com</a></h6>
+    </footer> 
 </body>
 </html>
