@@ -24,7 +24,11 @@
              <asp:TableRow>
                 <asp:TableCell>4</asp:TableCell>
                 <asp:TableCell><a href="Access_FormControls.aspx">How To Get All Values Of Asp.Net Form Controls Using JQuery</a></asp:TableCell>
-            </asp:TableRow>            
+            </asp:TableRow>     
+            <asp:TableRow>
+                <asp:TableCell>5</asp:TableCell>
+                <asp:TableCell><a href="DisplayFormInfo.aspx">How To Display Form Info With Label Using JQuery</a></asp:TableCell>
+            </asp:TableRow>    
     </asp:Table>
     </div>
     

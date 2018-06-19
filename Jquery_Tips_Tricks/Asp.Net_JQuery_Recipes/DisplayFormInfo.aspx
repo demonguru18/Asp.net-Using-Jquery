@@ -1,13 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterWebsite.Master" AutoEventWireup="true" CodeBehind="Access_FormControls.aspx.cs" Inherits="Asp.Net_JQuery_Recipes.Access_FormControls" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterWebsite.Master" AutoEventWireup="true" CodeBehind="DisplayFormInfo.aspx.cs" Inherits="Asp.Net_JQuery_Recipes.DisplayFormInfo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Display Form Data</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col">
-
-                <!-- REGISTRATION FORM CODE START-->
-          <form runat="server" style="width:500px; margin:auto">
+            <div class="col-md-6">
+                <!-- REGISTRATION FORM CODE START -->
+                <form runat="server" style="width:500px; margin:auto">
                     <div class="card">
                     <div class="card-header text-center">
                         <h6>How To Acces Values of Asp.NET form Controls</h6>
@@ -41,7 +41,7 @@
 
                         <div class="form-group">  
                              <Label class="form-control col-xs-6">Gender:
-                            <asp:RadioButtonList runat="server" RepeatDirection="Horizontal" class="input-group-text"> 
+                            <asp:RadioButtonList runat="server" RepeatDirection="Horizontal" class="input-group-text" ID="Gender"> 
                                 <asp:ListItem Value="Male"><i class="fa fa-male ml-2"></i> Male</asp:ListItem>
                                 <asp:ListItem Value="Female" class="ml-3"><i class="fa fa-female ml-2"></i> Female</asp:ListItem>
                                 <asp:ListItem Value="Other" class="ml-3"><i class="fa fa-genderless ml-2"></i> Other</asp:ListItem>
@@ -61,27 +61,49 @@
                                 </asp:CheckBoxList>
                             </Label>
                         </div>  
+
+                             <div class="form-group">
+                                
+                                    <asp:CheckBox runat="server" ID="Subscribe" Text="Subscribe to Newsletter"></asp:CheckBox>                                
+                               
+                        </div>  
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="form-control btn btn-secondary" /> 
                     </div>
                     <div class="card-footer">
                        <p id="FormData"></p>
                     </div>
         </div>
-          </form>
-        <!-- REGISTRATION FORM CODE END-->
+                </form>
             </div>
-        </div>          
+        </div>
     </div>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#<%=btnSubmit.ClientID%>").click(function (event) {
-                event.preventDefault();
-                $("#FormData").text('').append($(":checked, :selected, :text").map(function () {
-                    return $(this).val() || null;
-                }).get().join("<br/>"));
-              
+            $("#<%=btnSubmit.ClientID%>").click(function () {
+                var strUserName = $("#<%=UserName.ClientID%>").val();
+                var strName = $("#<%=Name.ClientID%>").val();
+                var drpEducation = $("#<%=Education.ClientID%>").find(":selected").text();
+                var rdbGender = $("#<%=Gender.ClientID%> input:checked").val();
+                var strAreaInterest = "";
+                $("#<%=AreaOfInterest.ClientID%> input:checked").each(function () {
+                    strAreaInterest = strAreaInterest + " " + $(this).val();
+                });
+                var strSubscribe = "";
+                if ($("#<%=Subscribe.ClientID%>").is(":checked"))
+                {
+                    strSubscribe = $("#<%=Subscribe.ClientID%>").next().html();                 
+                }
+                // Display Form Information
+                var strDisplayInfo = "Please Confirm the Following Data : \r\n" +
+                    "Username: " + strUserName + "\r\n" +
+                    "Name: " + strName + "\r\n" +
+                    "Education: " + drpEducation + "\r\n" +
+                    "Gender: " + rdbGender + "\r\n" +
+                    "Area Of Interest: " + strAreaInterest + "\r\n" +
+                    "Suscribed: " + strSubscribe + "\r\n" +
+                    "Click OK to Proceed"
+                window.confirm(strDisplayInfo);
             });
-
         });
     </script>
 </asp:Content>

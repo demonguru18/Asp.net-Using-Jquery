@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Access_FormControls.aspx" />
+    <Content Include="DisplayFormInfo.aspx" />
     <Content Include="Home.aspx" />
     <None Include="packages.config" />
     <Content Include="Get_Values_Of_All_Textboxes.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="Disable_Cut_Copy_Paste_On_Textbox.aspx.designer.cs">
       <DependentUpon>Disable_Cut_Copy_Paste_On_Textbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayFormInfo.aspx.cs">
+      <DependentUpon>DisplayFormInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayFormInfo.aspx.designer.cs">
+      <DependentUpon>DisplayFormInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Get_Values_Of_All_Textboxes.aspx.cs">
       <DependentUpon>Get_Values_Of_All_Textboxes.aspx</DependentUpon>
