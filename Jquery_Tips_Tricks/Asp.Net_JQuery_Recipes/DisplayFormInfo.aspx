@@ -10,7 +10,7 @@
                 <form runat="server" style="width:500px; margin:auto">
                     <div class="card">
                     <div class="card-header text-center">
-                        <h6>How To Acces Values of Asp.NET form Controls</h6>
+                        <h6>How To Display Values of Asp.NET form Controls</h6>
                     </div>
                     <div class="card-body">
                             
